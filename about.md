@@ -28,6 +28,8 @@ I am available on a limited basis for consulting engagements.
 
 ## Personal
 
-I enjoy most forms of outdoor recreation, including (but not limited to) swimming, biking, running, triathlons, surfing, backpacking and skiing (downhill, backcountry & cross country).
+I enjoy most forms of outdoor recreation, including (but not limited to) swimming, biking, running, triathlons, surfing, backpacking and skiing (downhill, backcountry & cross country). Cooking is my other passion, with virtually nothing off limits.
 
-I live with my partner in Portland, Oregon.
+I currently live with my hometown with my partner in Portland, Oregon.
+
+![Evan and Aimee]({{ site.baseurl }}/images/evanandaimee.png){:height="50%" width="50%"}

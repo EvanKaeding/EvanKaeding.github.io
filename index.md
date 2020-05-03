@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+Hey there! I'm short on content right now, so check out my [about]({{ site.baseurl }}/about/) page in the meantime.
