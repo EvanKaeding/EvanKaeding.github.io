@@ -4,15 +4,30 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hey there! I'm Evan.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+![Evan Kaeding]({{ site.baseurl }}/images/evankaeding.png){:height="20%" width="20%"}
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I'm currently building a next generation analytics stack at [Wieden + Kennedy](https://www.wk.com).
 
+## Specialities:
+- **R**: data analysis and statistical modeling
+- **Python**: moving data around in prod
+- **Docker**: reproducibility and fewer headaches in prod
+- **BigQuery (SQL)**: storing and distributing access to large amounts of data
+- **Google Data Studio**: enabling and democratizing data visualization
 
-[jekyll-organization]: https://github.com/jekyll
+## Consulting:
+
+I am available on a limited basis for consulting engagements.
+
+- **Solution Architecture**: <!--- Building an analytics stack? I have some thoughts on that. -->
+- **Vendor Selection**:<!--- I have experience with dozens of data & Martech vendors. Ask me about it. -->
+- **Training**:<!--- I help great analysts productionize their analysis and work in teams. -->
+- **Development**:<!--- I'll roll my sleeves up and write/look at your code. -->
+
+## Personal
+
+I enjoy most forms of outdoor recreation, including (but not limited to) swimming, biking, running, triathlons, surfing, backpacking and skiing (downhill, backcountry & cross country).
+
+I live with my partner in Portland, Oregon.
