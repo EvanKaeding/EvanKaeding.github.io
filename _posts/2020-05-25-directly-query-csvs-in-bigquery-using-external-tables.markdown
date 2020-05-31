@@ -10,7 +10,7 @@ It’d be great if all of our data came from nice, clean SQL databases, or flat 
 
 “Manually-curated data”, or MCD,  is how I refer to data that has been assembled, collected, entered or ever once modified by humans.
 
-Having used BigQuery for almost 4 years now, I’ve come across several ETL patterns to import these sources of manual data on a regular basis. BigQuery has several features to import data for one-time use, but these strategies are my favorite for managing MCD that is periodically updated or appended.
+Having used BigQuery for a few years now, I’ve come across several ETL patterns to import these sources of manual data on a regular basis. BigQuery has several features to import data for one-time use, but these strategies are my favorite for managing MCD that is periodically updated or appended.
 
 
 ## External Tables
@@ -34,7 +34,7 @@ External tables in BigQuery are my personal favorite option. By leveraging Googl
 
 ![Query a BigQuery External Table]({{ site.baseurl }}/images/query-external-table.png)
 
-You might wonder how BigQuery is able to directly query CSVs files without loading them first. Under the hood, every time the table is queried, BigQuery loads all of the CSVs into a temporary table and then performs the query on that data.
+You might wonder how BigQuery is able to directly query CSV files without loading them first. Under the hood, every time the table is queried, BigQuery loads all of the CSVs into a temporary table and then performs the query on that data.
 
 ## Pros:
 
@@ -48,14 +48,3 @@ You might wonder how BigQuery is able to directly query CSVs files without loadi
 *   **Partitioning:** An additional implication of this combined process is that you can’t use native BigQuery partitioning or clustering strategies. There are some advanced methods that are explained in further detail [here](https://cloud.google.com/bigquery/docs/hive-partitioned-queries-gcs).
 *   **Errors:** Even if you have 40k files in Cloud Storage, if a single one of them has an error, your entire query will fail. That’s good news or bad news depending on who you are, but BigQuery provides very limited information on the errors to end users. Most of the time, you’ll need to dive into the error log to find out what went wrong (great post on how to do that here).
 *   **Bucket Locations:** As of right now, there are only a few regions that support queries from external tables. The only one in the US is us-central1. This means that you’ll likely need to move your data to a bucket located in one of these regions in order to work with external tables. Other regions outside the US can be found [here](https://cloud.google.com/bigquery/external-data-sources#external_data_source_limitations).
-
-## What you should use External Tables for:
-
-*   Data that is large in volume, but is infrequently accessed
-*   Data that maintains a constant schema
-*   Data that is frequently updated, modified or deleted
-
-## What you shouldn’t use External Tables for:
-
-*   Data that is large in volume, and frequently accessed
-*   Applications requiring very fast query responses (ie. dashboards)
